@@ -33,7 +33,8 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun boysOrGirls(sexe: String): List<Student> {
-        TODO("Not yet implemented")
+        if (groupBySex().containsKey(sexe)) return groupBySex()[sexe]!!
+        throw IllegalArgumentException("$sexe not implemented")
     }
 
     override fun onlyNames(): List<String> {
