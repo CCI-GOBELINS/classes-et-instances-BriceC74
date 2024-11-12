@@ -29,7 +29,7 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun groupBySex(): Map<String, List<Student>> {
-        TODO("Not yet implemented")
+        return listOf10().groupBy { a -> a.sexe }
     }
 
     override fun boysOrGirls(sexe: String): List<Student> {
