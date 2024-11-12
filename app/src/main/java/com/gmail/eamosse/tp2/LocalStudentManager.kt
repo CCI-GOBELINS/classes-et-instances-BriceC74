@@ -38,7 +38,7 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun onlyNames(): List<String> {
-        TODO("Not yet implemented")
+        return listOf10().map { it.name }
     }
 
     override fun deleteBySex(sex: String) {
